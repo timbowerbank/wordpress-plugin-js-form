@@ -25,7 +25,7 @@ class JSPF_Admin {
         add_menu_page(
             'Form Submissions',
             'Form Submissions',
-            'manage_options',
+            'edit_others_posts',
             'jspf-submissions',
             array(__CLASS__, 'render_submissions_page'),
             'dashicons-email',
@@ -36,7 +36,7 @@ class JSPF_Admin {
             'jspf-submissions',
             'View Submission',
             null, // Don't show in menu
-            'manage_options',
+            'edit_others_posts',
             'jspf-view-submission',
             array(__CLASS__, 'render_single_submission_page')
         );
@@ -291,7 +291,7 @@ class JSPF_Admin {
         }
 
         // Check permissions
-        if (!current_user_can('manage_options')) {
+        if (!current_user_can('edit_others_posts')) {
             wp_die('You do not have permission to delete submissions');
         }
 
