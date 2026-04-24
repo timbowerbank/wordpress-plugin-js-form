@@ -3,7 +3,7 @@
  * Plugin Name: JS Powered Contact Form
  * Plugin URI: https://example.com
  * Description: A JavaScript-powered contact form with honeypot protection, validation, and email notifications
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Your Name
  * Author URI: https://example.com
  * License: GPL v2 or later
@@ -17,10 +17,10 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('JSPF_VERSION', '1.0.0');
+define('JSPF_VERSION', '1.1.0');
 define('JSPF_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('JSPF_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('JSPF_RECIPIENT_EMAIL', 'your-email@example.com'); // CHANGE THIS to your email address
+define('JSPF_RECIPIENT_EMAIL', 'restormel.architectural@gmail.com'); // CHANGE THIS to your email address
 
 // Include required files
 require_once JSPF_PLUGIN_DIR . 'includes/class-database.php';
